@@ -1,5 +1,5 @@
 #include<stdio.h>
-void input_two_numbers(int *a,int *b)
+void input(int *a,int *b)
 {
   printf("enter two numbers\n");
   scanf("%d %d",a,b);
@@ -12,15 +12,15 @@ void add (int a, int b, int *sum)
 }
 void output(int a,int b,int sum)
 {
-  printf("sum of %d + %d is %d\n",a,b,sum);
+  printf("addition of %d + %d is %d\n",a,b,sum);
 
 }
 int main()
 {
-  int x,y,sum;
-  input(&x,&y);
-  add(x,y,&sum);
-  output(x,y,sum);
+  int a,b,sum;
+  input(&a,&b);
+  add(a,b,&sum);
+  output(a,b,sum);
   return 0;
 
 }
